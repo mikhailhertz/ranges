@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(Ranges LANGUAGES CXX)
+add_library(Ranges INTERFACE)
+set_property(TARGET Ranges PROPERTY CXX_STANDARD 20)
+set_property(TARGET Ranges PROPERTY CXX_STANDARD_REQUIRED ON)
+target_include_directories(Ranges INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
